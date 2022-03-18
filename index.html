@@ -3,16 +3,12 @@
 <head>
     <script>
             function flashtext() {
-    var cols = ["1,","2","3","4","5","6","7","8","9","a","b","c","d","e"];
+    var cols = ["1,","2","3","4","5","6","7","8","9","a","b","c","d","e", "f"];
         document.body.style.background = "#" + cols[Math.floor(Math.random() * cols.length)] + cols[Math.floor(Math.random() * cols.length)] + cols[Math.floor(Math.random() * cols.length)] + cols[Math.floor(Math.random() * cols.length)] + cols[Math.floor(Math.random() * cols.length)] + cols[Math.floor(Math.random() * cols.length)];
       
     } 
 
-    setInterval(function() {
-        flashtext();
-        //flashtext('flashingtext2','blue');
-        //flashtext('flashingtext3','green');
-    }, 10 ); //set an interval timer up to repeat the function
+    setInterval(function() {flashtext();}, 10 ); 
     </script>
 </head>
 <body>
