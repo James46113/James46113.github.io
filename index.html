@@ -1,17 +1,10 @@
-<!DOCTYPE HTML>
 <html>
 <head>
-    <script>
-            function flashtext() {
-    var cols = ["1,","2","3","4","5","6","7","8","9","a","b","c","d","e", "f"];
-        document.body.style.background = "#" + cols[Math.floor(Math.random() * cols.length)] + cols[Math.floor(Math.random() * cols.length)] + cols[Math.floor(Math.random() * cols.length)] + cols[Math.floor(Math.random() * cols.length)] + cols[Math.floor(Math.random() * cols.length)] + cols[Math.floor(Math.random() * cols.length)];
-      
-    } 
-
-    setInterval(function() {flashtext();}, 10 ); 
-    </script>
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
 </head>
 <body>
-
-</body>    
+    <a-scene embedded arjs></a-scene>
+    <a-gltf-model position="0 0 -5" rotation="0 0 0" scale="0.25 0.25 0.25" src="Test%2520Katana/katana.gltf"></a-gltf-model>
+</body>
 </html>
